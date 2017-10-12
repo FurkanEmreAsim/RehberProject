@@ -1,0 +1,13 @@
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\obj\Debug\RehberProje.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\bin\Debug\RehberProje.Entities.dll.config
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\bin\Debug\RehberProje.Entities.dll
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\bin\Debug\RehberProje.Entities.pdb
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\bin\Debug\EntityFramework.dll
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\bin\Debug\EntityFramework.xml
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\obj\Debug\RehberProje.Entities.dll
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\obj\Debug\RehberProje.Entities.pdb
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\bin\Debug\RehberProje.Core.dll
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\bin\Debug\RehberProje.Core.pdb
+C:\Users\Mesut\documents\visual studio 2017\Projects\RehberProje\RehberProje.Entities\bin\Debug\RehberProje.Core.dll.config

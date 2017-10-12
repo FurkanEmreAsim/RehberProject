@@ -1,0 +1,39 @@
+﻿@using RehberProje.MVCWeb.UI.Models
+@model KisiViewModel
+
+@{
+    ViewBag.Title = "Sil";
+}
+
+<p>
+    <h2>Aşağıdaki kişi kaydını silmek istediğinizden emin misiniz?</h2>
+</p>
+<table>
+    <tr>
+        <td><b>Adı:</b></td>
+        <td>@Model.Kisi.Ad</td>
+    </tr>
+    <tr>
+        <td><b>Soyadı:</b></td>
+        <td>@Model.Kisi.Soyad</td>
+    </tr>
+    <tr>
+        <td><b>Yaşı:</b></td>
+        <td>@Model.Kisi.Yas</td>
+    </tr>
+</table>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken();
+    <input type="submit" class="btn btn-danger" value="Sil" />
+}
+
+<div class="input-group">
+    @if (ViewBag.Result != null)
+            {
+        <div class="alert alert-@ViewBag.Status">
+            @ViewBag.Result
+        </div>
+    }
+</div>

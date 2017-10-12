@@ -1,0 +1,32 @@
+﻿@model RehberProje.MVCWeb.UI.Models.AdresViewModel
+
+@{
+    ViewBag.Title = "Yeni";
+}
+
+<h2>Yeni Adres</h2>
+<hr />
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="input-group">
+        <div class="input-group-addon weightSpan" id="txtAdres">Adres </div>
+        @Html.TextAreaFor(x => x.Adres.AdresTanim, new { @class = "form-control", placeholder = "Adres Tanımınız", aria_describedby = "txtAdres" })
+    </div>
+    <br />
+    <div class="input-group">
+        <div class="input-group-addon weightSpan" id="ddlKisi">Kişi </div>
+        @Html.DropDownListFor(x => x.Adres.Kisi.ID, (List<SelectListItem>)ViewBag.kisiler, new { @class = "form-control", aria_describedby = "ddlKisi" })
+    </div>
+    <br />
+    <div class="input-group">
+        <input type="submit" value="Kaydet" class="btn btn-success" />
+    </div>
+    <div class="input-group">
+        @if (ViewBag.Sonuc != null)
+        {
+            <div class="alert alert-@ViewBag.Durum">@ViewBag.Sonuc</div>
+        }
+    </div>
+}

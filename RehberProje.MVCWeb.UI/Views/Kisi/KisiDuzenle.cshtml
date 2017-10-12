@@ -1,0 +1,51 @@
+﻿@using RehberProje.MVCWeb.UI.Models
+@model KisiViewModel
+
+@{
+            ViewBag.Title = "Duzenle";
+}
+
+<h2>Duzenle</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(x => x.Kisi.ID)
+    <div class="input-group">
+        <div class="input-group-addon" id="txtAd">
+            Ad
+        </div>
+
+        @Html.TextBoxFor(x => x.Kisi.Ad, new { @class = "form-control", placeholder = "Kişi Adı", aria_describedby = "txtAd" })
+    </div>
+    <br />
+
+    <div class="input-group">
+        <div class="input-group-addon" id="txtSoyad">
+            Soyad
+        </div>
+        @Html.TextBoxFor(x => x.Kisi.Soyad, new { @class = "form-control", placeholder = "Kişi Soyadı", aria_describedby = "txtSoyad" })
+    </div>
+            <br />
+            <div class="input-group">
+                <div class="input-group-addon" id="txtYas">
+                    Yaş
+                </div>
+                @Html.TextBoxFor(x => x.Kisi.Yas, new { @class = "form-control", placeholder = "Kişi Yaşı", aria_describedby = "txtYas" })
+            </div>
+            <br />
+            <div class="input-group">
+                <input type="submit" class="btn btn-success" value="Güncelle" />
+            </div>
+            <br />
+            <div class="input-group">
+                @if (ViewBag.Result != null)
+                {
+                    <div class="alert alert-@ViewBag.Status">
+                        @ViewBag.Result
+                    </div>
+                }
+            </div>
+
+}
